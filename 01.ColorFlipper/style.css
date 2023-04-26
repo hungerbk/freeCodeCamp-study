@@ -1,0 +1,34 @@
+body {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.colorName {
+  width: max-content;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.changedColorName {
+  color: cornflowerblue;
+}
+
+.flipperButton {
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
