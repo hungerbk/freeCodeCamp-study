@@ -1,0 +1,70 @@
+html,
+body,
+div,
+span,
+h1,
+p,
+ul,
+li,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+.counter {
+  margin: 50px 0;
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.number {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 50px;
+}
+
+.buttonList {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.counterButton {
+  width: max-content;
+  padding: 10px 20px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
