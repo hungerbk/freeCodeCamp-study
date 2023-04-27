@@ -26,7 +26,7 @@
 - Math.random()
 - array.length
 ***   
-## 02. Counter
+## [02. Counter](https://github.com/freeCodeCamp-study/bokyeong/tree/main/02.Counter)
 ![Apr-26-2023 16-37-27](https://user-images.githubusercontent.com/43366461/234503794-e0e49fa1-f79a-401a-a5de-bf3590710452.gif)
    
 - 버튼을 클릭하면 숫자의 크기가 증가, 감소, 초기화되도록 구현
