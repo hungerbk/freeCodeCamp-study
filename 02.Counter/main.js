@@ -5,7 +5,6 @@ let number = Number(document.querySelector(".number").textContent);
 const handleCounter = (e) => {
   if (e.currentTarget.textContent === "DECREASE") {
     --number;
-    counter.textContent = number;
   } else if (e.currentTarget.textContent === "INCREASE") {
     ++number;
   } else {
