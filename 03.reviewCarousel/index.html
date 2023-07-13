@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet" />
     <script src="main.js" defer></script>
     <title>Review Carousel</title>
   </head>
   <body>
-    <main></main>
+    <main>
+      <h1>Our Reviews</h1>
+      <section class="reviewCard">
+        <p class="imageDeco" aria-hidden="true">"</p>
+        <img src="./profile1.jpeg" alt="리뷰 작성자 프로필 사진" class="profilePhoto" />
+        <p class="name">이름</p>
+        <p class="job">직업</p>
+        <p class="review">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis aperiam dicta ducimus explicabo ipsam ea possimus, consequatur libero doloribus temporibus a eveniet expedita
+          recusandae sapiente perspiciatis delectus, praesentium quisquam!
+        </p>
+        <ul class="arrowButtonList">
+          <li><button class="arrowButton" id="prevButton" type="button"><</button></li>
+          <li><button class="arrowButton" id="nextButton" type="button">></button></li>
+        </ul>
+        <button class="surpriseButton" type="button">Surprise Me</button>
+      </section>
+    </main>
   </body>
 </html>
