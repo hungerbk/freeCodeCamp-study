@@ -40,3 +40,26 @@ const reviewList = [
     profileImage: "./profile5.png",
   },
 ];
+
+const profileImage = document.querySelector(".profileImage");
+const name = document.querySelector(".name");
+const job = document.querySelector(".job");
+const review = document.querySelector(".review");
+
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+const surpriseButton = document.querySelector(".surpriseButton");
+
+let currentReview = 0;
+
+window.addEventListener("DOMContentLoaded", function () {
+  showPerson(currentReview);
+});
+
+function showPerson(person) {
+  const item = reviewList[person];
+  profileImage.src = item.profileImage;
+  name.textContent = item.name;
+  job.textContent = item.job;
+  review.textContent = item.review;
+}
