@@ -53,11 +53,11 @@ const surpriseButton = document.querySelector(".surpriseButton");
 let currentReview = 0;
 
 window.addEventListener("DOMContentLoaded", function () {
-  showPerson(currentReview);
+  showPerson();
 });
 
-function showPerson(person) {
-  const item = reviewList[person];
+function showPerson() {
+  const item = reviewList[currentReview];
   profileImage.src = item.profileImage;
   name.textContent = item.name;
   job.textContent = item.job;
@@ -69,7 +69,7 @@ nextButton.addEventListener("click", function () {
   if (currentReview > reviewList.length - 1) {
     currentReview = 0;
   }
-  showPerson(currentReview);
+  showPerson();
 });
 
 prevButton.addEventListener("click", function () {
@@ -77,5 +77,5 @@ prevButton.addEventListener("click", function () {
   if (currentReview < 0) {
     currentReview = reviewList.length - 1;
   }
-  showPerson(currentReview);
+  showPerson();
 });
