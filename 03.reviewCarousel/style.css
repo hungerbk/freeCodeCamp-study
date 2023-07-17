@@ -119,7 +119,7 @@ h1::after {
   cursor: pointer;
 }
 
-.surpriseButton {
+.randomButton {
   color: #1e90ff;
   background-color: #d1e8fe;
   padding: 5px;
