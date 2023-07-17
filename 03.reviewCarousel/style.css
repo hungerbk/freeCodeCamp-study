@@ -1,0 +1,130 @@
+html,
+body,
+div,
+span,
+h1,
+p,
+ul,
+li,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #dbe6eb;
+}
+ul {
+  list-style: none;
+}
+
+main {
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  border-bottom: 5px solid #1e90ff;
+  margin: 10px auto;
+}
+
+.reviewCard {
+  margin: 50px;
+  padding: 30px;
+  background-color: #ffffff;
+  width: 600px;
+  min-height: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.imageDeco {
+  font-size: 50px;
+  font-family: "Passion One", cursive;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-color: #1e90ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  left: 230px;
+  z-index: 10;
+  padding-top: 5px;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 10px;
+  object-fit: cover;
+  box-shadow: 10px -6px #1e90ff;
+}
+
+.name {
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.job {
+  color: #1e90ff;
+}
+
+.review {
+  color: #6e8996;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.arrowButtonList {
+  display: flex;
+  gap: 20px;
+}
+
+.arrowButton {
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
+  font-family: "Passion One", cursive;
+  color: #85c2ff;
+  cursor: pointer;
+}
+
+.randomButton {
+  color: #1e90ff;
+  background-color: #d1e8fe;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #1e90ff;
+  border-style: outset;
+}
