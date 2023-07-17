@@ -9,7 +9,7 @@
    
 **첫번째 예제의 미리보기는 색이 빠르게 바뀝니다. 주의하시기 바랍니다.**   
    
-## [01. Color Flipper](https://github.com/freeCodeCamp-study/bokyeong/tree/main/01.ColorFlipper)
+## [01. Color Flipper](https://github.com/hungerbk/freeCodeCamp-study/tree/main/01.ColorFlipper)
 ![Apr-26-2023 16-28-55](https://user-images.githubusercontent.com/43366461/234501811-5c3f367f-bb00-4cfa-a8c9-8732fc17e908.gif)
    
 - 버튼을 클릭하면 배경색이 바뀌고 해당하는 배경색의 이름이 화면에 표시됨
@@ -26,7 +26,7 @@
 - Math.random()
 - array.length
 ***   
-## [02. Counter](https://github.com/freeCodeCamp-study/bokyeong/tree/main/02.Counter)
+## [02. Counter](https://github.com/hungerbk/freeCodeCamp-study/tree/main/02.Counter)
 ![Apr-26-2023 16-37-27](https://user-images.githubusercontent.com/43366461/234503794-e0e49fa1-f79a-401a-a5de-bf3590710452.gif)
    
 - 버튼을 클릭하면 숫자의 크기가 증가, 감소, 초기화되도록 구현
@@ -40,4 +40,19 @@
 - addEventListener()
 - currentTarget 속성
 - classList
+- textContent
+***   
+## [03. Review Carousel](https://github.com/hungerbk/freeCodeCamp-study/tree/main/03.reviewCarousel)
+![Jul-17-2023 22-43-41](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/574a18b9-023b-46fc-b8ec-4c9bb6c04ebc)
+
+- 여러 리뷰 객체의 정보가 있는 리뷰 배열을 생성   
+- prevButton을 클릭하면 이전 리뷰가 화면에 보이도록 구현
+- nextButton을 클릭하면 다음 리뷰가 화면에 보이도록 구현
+- randomButton을 클릭하면 랜덤 리뷰가 화면에 보이도록 구현 (단, 현재 보이는 리뷰와 일치하지 않는 리뷰로만 변경)
+
+### 주요 개념
+- 객체
+- DOMContentLoaded
+- addEventListener()
+- array.length
 - textContent
