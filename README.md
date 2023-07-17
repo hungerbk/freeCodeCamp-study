@@ -43,7 +43,7 @@
 - textContent
 ***   
 ## [03. Review Carousel](https://github.com/hungerbk/freeCodeCamp-study/tree/main/03.reviewCarousel)
-![Jul-17-2023 22-43-41](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/574a18b9-023b-46fc-b8ec-4c9bb6c04ebc)
+![Jul-17-2023 22-58-17](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/915d64ae-9a4b-41d2-86fd-eece4c7908a5)
 
 - 여러 리뷰 객체의 정보가 있는 리뷰 배열을 생성   
 - prevButton을 클릭하면 이전 리뷰가 화면에 보이도록 구현
