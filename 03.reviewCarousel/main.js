@@ -79,3 +79,20 @@ prevButton.addEventListener("click", function () {
   }
   showPerson();
 });
+
+randomButton.addEventListener("click", function () {
+  randomReview();
+});
+
+function makeRandomNumber() {
+  return Math.floor(Math.random() * reviewList.length);
+}
+
+function randomReview() {
+  let newNumber = makeRandomNumber();
+  while (currentReview === newNumber) {
+    newNumber = makeRandomNumber();
+  }
+  currentReview = newNumber;
+  showPerson();
+}
