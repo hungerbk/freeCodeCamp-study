@@ -63,3 +63,19 @@ function showPerson(person) {
   job.textContent = item.job;
   review.textContent = item.review;
 }
+
+nextButton.addEventListener("click", function () {
+  currentReview++;
+  if (currentReview > reviewList.length - 1) {
+    currentReview = 0;
+  }
+  showPerson(currentReview);
+});
+
+prevButton.addEventListener("click", function () {
+  currentReview--;
+  if (currentReview < 0) {
+    currentReview = reviewList.length - 1;
+  }
+  showPerson(currentReview);
+});
