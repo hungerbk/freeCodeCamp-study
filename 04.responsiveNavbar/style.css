@@ -25,27 +25,30 @@ ul {
   list-style: none;
 }
 
-a {
+.navItem a {
   font-size: 20px;
   text-decoration: none;
   color: inherit;
   letter-spacing: 5px;
   display: block;
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
 }
 
 a:hover {
   background-color: #d5edfa;
+  padding-left: 30px;
+  color: #5ca9d6;
 }
 
 header {
   box-sizing: border-box;
-  padding: 20px;
   background-color: #fff;
   box-shadow: 0px 5px 10px rgb(188, 188, 188);
 }
 
 .title {
+  display: block;
+  padding: 20px;
   font-size: 40px;
   letter-spacing: 5px;
   text-shadow: 0px 5px 5px rgb(188, 188, 188);
