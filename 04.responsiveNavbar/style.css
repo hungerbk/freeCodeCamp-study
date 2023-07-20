@@ -32,7 +32,9 @@ header {
 }
 
 .title {
-  display: block;
+  display: inline-block;
+  background-color: #fff;
+  z-index: 10;
   padding: 20px;
   font-size: 40px;
   letter-spacing: 5px;
@@ -108,7 +110,35 @@ header {
 }
 
 @media (min-width: 769px) {
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
   .navButton {
     display: none;
+  }
+
+  .navList {
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: calc(475px / -2);
+  }
+
+  .navItem a {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 5px;
+    display: block;
+    padding: 10px 10px 10px 20px;
+  }
+
+  a:hover {
+    color: #5ca9d6;
   }
 }
