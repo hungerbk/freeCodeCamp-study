@@ -60,10 +60,12 @@ header {
     padding: 10px 10px 10px 20px;
   }
 
-  a:hover {
+  a:hover,
+  a:focus {
     background-color: #d5edfa;
     padding-left: 30px;
     color: #5ca9d6;
+    outline-offset: -2px;
   }
 
   .showItems {
@@ -85,6 +87,7 @@ header {
 
   .navButton:hover,
   .navButton:focus {
+    outline-offset: 2px;
     transform: rotate(-90deg);
     transition: all 0.5s;
   }
@@ -141,10 +144,12 @@ header {
     color: inherit;
     letter-spacing: 5px;
     display: block;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 10px;
   }
 
-  a:hover {
+  a:hover,
+  a:focus {
     color: #5ca9d6;
+    outline-offset: -2px;
   }
 }
