@@ -33,7 +33,6 @@ header {
 
 .title {
   display: inline-block;
-  background-color: #fff;
   z-index: 10;
   padding: 20px;
   font-size: 40px;
@@ -51,7 +50,7 @@ header {
   transition: all 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1083px) {
   .navItem a {
     font-size: 20px;
     text-decoration: none;
@@ -109,7 +108,7 @@ header {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1084px) {
   header {
     display: flex;
     flex-flow: row nowrap;
