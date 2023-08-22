@@ -1,5 +1,5 @@
 const navToggle = document.querySelector(".navButton");
-const navList = document.querySelector(".navList");
+const navList = document.querySelector(".menuNavList");
 
 navToggle.addEventListener("click", function () {
   // if (navList.classList.contains("showItems")) {
