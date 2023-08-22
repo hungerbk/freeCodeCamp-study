@@ -44,7 +44,8 @@ header {
   color: CornflowerBlue;
 }
 
-.navList {
+.menuNavList,
+.snsNavList {
   height: 0;
   overflow: hidden;
   transition: all 0.5s;
@@ -128,7 +129,7 @@ header {
     display: none;
   }
 
-  .navList {
+  .menuNavList {
     height: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -136,6 +137,16 @@ header {
     top: 20px;
     left: 50%;
     margin-left: calc(475px / -2);
+  }
+
+  .snsNavList {
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    gap: 10px;
   }
 
   .navItem a {
@@ -151,5 +162,9 @@ header {
   a:focus {
     color: #5ca9d6;
     outline-offset: -2px;
+  }
+
+  .snsNavItem a {
+    padding: 5px 3px 0 3px;
   }
 }
