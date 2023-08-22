@@ -48,6 +48,9 @@ header {
 .snsNavList {
   height: 0;
   overflow: hidden;
+}
+
+.menuNavList {
   transition: all 0.5s;
 }
 
@@ -164,7 +167,8 @@ header {
     outline-offset: -2px;
   }
 
-  .snsNavItem a {
-    padding: 5px 3px 0 3px;
+  .snsLogoImg:hover,
+  .snsNavItem a .snsLogoImg:focus {
+    filter: invert(66%) sepia(28%) saturate(808%) hue-rotate(161deg) brightness(90%) contrast(85%);
   }
 }
