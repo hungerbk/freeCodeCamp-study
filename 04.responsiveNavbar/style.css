@@ -1,0 +1,174 @@
+html,
+body,
+div,
+span,
+h1,
+p,
+ul,
+li,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #eaf4f9;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgb(188, 188, 188);
+}
+
+.title {
+  display: inline-block;
+  z-index: 10;
+  padding: 20px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 0px 5px 5px rgb(188, 188, 188);
+}
+
+.coloredTitle {
+  color: CornflowerBlue;
+}
+
+.menuNavList,
+.snsNavList {
+  height: 0;
+  overflow: hidden;
+}
+
+.menuNavList {
+  transition: all 0.5s;
+}
+
+@media (max-width: 1083px) {
+  .navItem a {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 5px;
+    display: block;
+    padding: 10px 10px 10px 20px;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: #d5edfa;
+    padding-left: 30px;
+    color: #5ca9d6;
+    outline-offset: -2px;
+  }
+
+  .showItems {
+    height: 10rem;
+    transition: all 0.5s;
+  }
+
+  .navButton {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .navButton:hover,
+  .navButton:focus {
+    outline-offset: 2px;
+    transform: rotate(-90deg);
+    transition: all 0.5s;
+  }
+
+  .firstBurgerBar,
+  .secondBurgerBar,
+  .lastBurgerBar {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: CornflowerBlue;
+    border-radius: 0.25rem;
+    left: 0;
+  }
+
+  .firstBurgerBar {
+    top: 0;
+  }
+
+  .secondBurgerBar {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .lastBurgerBar {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+}
+
+@media (min-width: 1084px) {
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .navButton {
+    display: none;
+  }
+
+  .menuNavList {
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: calc(475px / -2);
+  }
+
+  .snsNavList {
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    gap: 10px;
+  }
+
+  .navItem a {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 5px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+  }
+
+  a:hover,
+  a:focus {
+    color: #5ca9d6;
+    outline-offset: -2px;
+  }
+
+  .snsLogoImg:hover,
+  .snsNavItem a .snsLogoImg:focus {
+    filter: invert(66%) sepia(28%) saturate(808%) hue-rotate(161deg) brightness(90%) contrast(85%);
+  }
+}
