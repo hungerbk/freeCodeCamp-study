@@ -9,7 +9,7 @@
    
 **첫번째 예제의 미리보기는 색이 빠르게 바뀝니다. 주의하시기 바랍니다.**   
    
-## [01. Color Flipper](https://github.com/hungerbk/freeCodeCamp-study/tree/main/01.ColorFlipper)
+## [01. Color Flipper](https://github.com/hungerbk/freeCodeCamp-study/tree/main/01.colorFlipper)
 ![Apr-26-2023 16-28-55](https://user-images.githubusercontent.com/43366461/234501811-5c3f367f-bb00-4cfa-a8c9-8732fc17e908.gif)
    
 - 버튼을 클릭하면 배경색이 바뀌고 해당하는 배경색의 이름이 화면에 표시됨
@@ -26,7 +26,7 @@
 - Math.random()
 - array.length
 ***   
-## [02. Counter](https://github.com/hungerbk/freeCodeCamp-study/tree/main/02.Counter)
+## [02. Counter](https://github.com/hungerbk/freeCodeCamp-study/tree/main/02.counter)
 ![Apr-26-2023 16-37-27](https://user-images.githubusercontent.com/43366461/234503794-e0e49fa1-f79a-401a-a5de-bf3590710452.gif)
    
 - 버튼을 클릭하면 숫자의 크기가 증가, 감소, 초기화되도록 구현
