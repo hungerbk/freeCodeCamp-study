@@ -38,11 +38,19 @@ button {
   cursor: pointer;
 }
 
-aside {
+.sidebar {
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
-  min-width: 400px;
-  position: absolute;
+  width: 100%;
+  transform: translate(-100%);
+  transition: all 0.5s ease;
+}
+
+.show-sidebar {
+  transform: translate(0);
 }
 
 .title {
@@ -180,14 +188,14 @@ aside {
 
 /* 모바일 */
 @media (max-width: 768px) {
-  aside {
-    width: 100%;
+  .show-sidebar.sidebar-toggle {
+    display: none;
   }
 }
 
 /* 데스크탑 */
-@media (min-width: 769) {
-  aside {
-    min-width: 400px;
+@media screen and (min-width: 769px) {
+  .sidebar {
+    width: 400px;
   }
 }
