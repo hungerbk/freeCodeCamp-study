@@ -164,10 +164,14 @@ aside {
 }
 
 .sns-icon-list {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  justify-self: center;
   gap: 15px;
+  position: absolute;
+  bottom: 0;
 }
 
 .sns-logo-img {
@@ -176,8 +180,14 @@ aside {
 
 /* 모바일 */
 @media (max-width: 768px) {
+  aside {
+    width: 100%;
+  }
 }
 
 /* 데스크탑 */
 @media (min-width: 769) {
+  aside {
+    min-width: 400px;
+  }
 }
