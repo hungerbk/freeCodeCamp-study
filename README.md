@@ -80,7 +80,7 @@
 
 ***
 ## [05. 사이드바 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/05.sidebar)
-![Aug-26-2023 22-40-14](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/e3743172-95e5-40e2-ad59-de6c893ab601)
+![Aug-26-2023 22-48-15](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/1a4a2668-1560-45f9-968f-024deb09f40b)
 
 
 - classList.toggle() 및 classList.remove()를 이용하여 사이드바 제어
