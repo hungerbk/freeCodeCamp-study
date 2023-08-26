@@ -77,3 +77,28 @@
 - 모바일 햄버거 바를 클릭한 경우, 원래대로 돌아오지 않음...
 
   ![Aug-24-2023 22-35-51](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/8da4fa45-3ac3-4d2d-862c-d900224104be)
+
+***
+## [05. 사이드바 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/05.sidebar)
+![Aug-26-2023 22-40-14](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/e3743172-95e5-40e2-ad59-de6c893ab601)
+
+
+- classList.toggle() 및 classList.remove()를 이용하여 사이드바 제어
+- toggle 버튼을 클릭하면 show-sidebar 클래스를 토글하고, close 버튼을 클릭하면 show-sidebar 클래스를 제거
+- transform을 이용하여 show-sidebar 제어
+  ```css
+  .sidebar {
+   tranform: translate(-100%);
+   transition: all 0.5s ease;
+   }
+
+  .show-sidebar {
+   transform: translate(0);
+  }
+  ```
+- 화면 크기에 따라 사이드바의 크기 조절
+
+### 주요개념
+- document.querySelector()
+- addEventListener()
+- classList.toggle()
