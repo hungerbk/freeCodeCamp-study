@@ -56,3 +56,24 @@
 - addEventListener()
 - array.length
 - textContent
+
+***   
+## [04. 반응형 내비게이션바 만들기](https://github.com/freeCodeCamp-study/bokyeong/tree/main/04.responsiveNavbar)
+![Aug-24-2023 23-12-07](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/3d9b88de-6baa-4814-aba0-7e31259ded94)
+
+- toggle을 이용하여 반응형 내비게이션 구현
+- 내비게이션 바를 숨긴 뒤, 너비에 따라 다른 스타일이 보이게 구현
+
+### 주요 개념
+- document.querySelector()
+- addEventListener()
+- classList.toggle()
+
+### 해결해야 하는 문제
+- 아이콘 이미지를 svg를 사용했는데, hover 했을 때는 색상이 변하지만 focus했을 때는 변하지 않음 (css의 filter 이용)
+
+  ![Aug-24-2023 22-32-28](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/9c6a42d2-6880-49a9-a9c3-6bb4819bedbd)
+
+- 모바일 햄버거 바를 클릭한 경우, 원래대로 돌아오지 않음...
+
+  ![Aug-24-2023 22-35-51](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/8da4fa45-3ac3-4d2d-862c-d900224104be)
