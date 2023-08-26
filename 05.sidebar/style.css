@@ -87,6 +87,12 @@ aside {
   transform: rotate(-45deg);
 }
 
+.close-button:hover,
+.close-button:focus {
+  transform: rotate(720deg);
+  transition: all 0.5s;
+}
+
 .sidebar-toggle {
   width: 35px;
   height: 35px;
@@ -100,6 +106,19 @@ aside {
 .sidebar-toggle:hover,
 .sidebar-toggle:focus {
   outline-offset: 2px;
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .first-burgerbar,
