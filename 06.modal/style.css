@@ -1,0 +1,151 @@
+html,
+body,
+div,
+span,
+h1,
+p,
+ul,
+li,
+section,
+aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-image: url(./see.jpg);
+  background-size: cover;
+}
+
+.banner {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  /* 세로 가운데 정렬 시작 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 세로 가운데 정렬 끝 */
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgb(169, 169, 169);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0px 0px 10px rgba(169, 169, 169, 0.8);
+}
+
+.banner h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+
+.open-modal-btn {
+  padding: 8px 10px;
+  color: #fff;
+  background-color: #6495ed;
+  border: 1px solid #466bb1;
+  border-radius: 3px;
+  letter-spacing: 3px;
+}
+
+.open-modal-btn:focus {
+  outline-offset: 4px;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(25, 25, 112, 0.5);
+  overflow: auto;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  display: none;
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgb(169, 169, 169);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content h3 {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.close-modal {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.close-modal::before,
+.close-modal::after {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: darkred;
+  position: absolute;
+  border-radius: 0.25rem;
+  top: 0;
+}
+
+.close-modal::before {
+  transform: rotate(45deg);
+}
+
+.close-modal::after {
+  transform: rotate(-45deg);
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.show-modal {
+  display: block;
+}
