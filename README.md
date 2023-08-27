@@ -9,7 +9,7 @@
    
 **첫번째 예제의 미리보기는 색이 빠르게 바뀝니다. 주의하시기 바랍니다.**   
    
-## [01. Color Flipper](https://github.com/hungerbk/freeCodeCamp-study/tree/main/01.ColorFlipper)
+## [01. Color Flipper](https://github.com/hungerbk/freeCodeCamp-study/tree/main/01.colorFlipper)
 ![Apr-26-2023 16-28-55](https://user-images.githubusercontent.com/43366461/234501811-5c3f367f-bb00-4cfa-a8c9-8732fc17e908.gif)
    
 - 버튼을 클릭하면 배경색이 바뀌고 해당하는 배경색의 이름이 화면에 표시됨
@@ -26,7 +26,7 @@
 - Math.random()
 - array.length
 ***   
-## [02. Counter](https://github.com/hungerbk/freeCodeCamp-study/tree/main/02.Counter)
+## [02. Counter](https://github.com/hungerbk/freeCodeCamp-study/tree/main/02.counter)
 ![Apr-26-2023 16-37-27](https://user-images.githubusercontent.com/43366461/234503794-e0e49fa1-f79a-401a-a5de-bf3590710452.gif)
    
 - 버튼을 클릭하면 숫자의 크기가 증가, 감소, 초기화되도록 구현
@@ -77,3 +77,28 @@
 - 모바일 햄버거 바를 클릭한 경우, 원래대로 돌아오지 않음...
 
   ![Aug-24-2023 22-35-51](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/8da4fa45-3ac3-4d2d-862c-d900224104be)
+
+***
+## [05. 사이드바 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/05.sidebar)
+![Aug-26-2023 22-48-15](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/1a4a2668-1560-45f9-968f-024deb09f40b)
+
+
+- classList.toggle() 및 classList.remove()를 이용하여 사이드바 제어
+- toggle 버튼을 클릭하면 show-sidebar 클래스를 토글하고, close 버튼을 클릭하면 show-sidebar 클래스를 제거
+- transform을 이용하여 show-sidebar 제어
+  ```css
+  .sidebar {
+   tranform: translate(-100%);
+   transition: all 0.5s ease;
+   }
+
+  .show-sidebar {
+   transform: translate(0);
+  }
+  ```
+- 화면 크기에 따라 사이드바의 크기 조절
+
+### 주요개념
+- document.querySelector()
+- addEventListener()
+- classList.toggle()
