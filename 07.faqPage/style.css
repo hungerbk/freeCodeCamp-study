@@ -94,6 +94,14 @@ main {
   filter: invert(46%) sepia(32%) saturate(2041%) hue-rotate(18deg) brightness(103%) contrast(91%);
 }
 
+.show-detail-btn:hover,
+.show-detail-btn:focus {
+  transform: rotate(-90deg) translateX(4px);
+  transition: all 0.5s;
+  outline-offset: 2px;
+  outline-color: red;
+}
+
 .detail {
   display: none;
   margin-top: 20px;
