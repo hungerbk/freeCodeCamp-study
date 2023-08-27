@@ -102,3 +102,16 @@
 - document.querySelector()
 - addEventListener()
 - classList.toggle()
+
+***
+## [06. 모달 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/05.modal)
+![Aug-27-2023 17-47-19](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/012cf19f-1470-42bc-88c3-272dcb9821fa)
+
+- classList.add()와 classList.remove()를 통해 모달의 display를 제어
+- backdrop-filter 속성을 이용하여 모달 뒷 부분 배경을 블러처리함
+
+### 주요개념
+- document.querySelector()
+- addEventListener()
+- classList.add()
+- classList.remove()
