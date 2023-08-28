@@ -1,0 +1,126 @@
+html,
+body,
+div,
+span,
+h1,
+p,
+ul,
+li,
+section,
+aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #ccdfe1;
+}
+
+main {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.general-questions {
+  margin-top: 100px;
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.general-questions h1 {
+  color: #b8860b;
+  font-size: 60px;
+  font-family: "Great Vibes", cursive;
+}
+
+.question-list {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 500px;
+  height: auto;
+}
+
+.question-item {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+  box-shadow: 0px 0px 10px rgba(169, 169, 169, 0.8);
+  position: relative;
+  height: auto;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+}
+
+.question {
+  font-size: 18px;
+}
+
+.show-detail-btn {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: url(./plus-minus-box.svg) no-repeat -4px -4px;
+  background-color: transparent;
+  border: none;
+  filter: invert(46%) sepia(32%) saturate(2041%) hue-rotate(18deg) brightness(103%) contrast(91%);
+}
+
+.show-detail-btn:hover,
+.show-detail-btn:focus {
+  transform: rotate(-90deg) translateX(4px);
+  transition: transform 0.5s;
+  outline-offset: 2px;
+  outline-color: red;
+}
+
+.detail {
+  display: none;
+  margin-top: 20px;
+  border-top: 1px solid darkgray;
+  padding-top: 20px;
+  color: darkgray;
+  font-size: 14.4px;
+  line-height: 150%;
+}
+
+.detail.show-text {
+  display: block;
+}
+
+.show-detail-btn.show-text {
+  background-position: -4px -36px;
+}
+
+.show-detail-btn.show-text:hover {
+  transform: rotate(0) translateX(0);
+  transition: transform 0.5s;
+}
