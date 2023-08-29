@@ -71,3 +71,24 @@ const menu = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis iusto voluptas voluptates culpa odio tenetur enim ipsa quidem modi quasi, dicta at nemo expedita laboriosam hic.",
   },
 ];
+
+const menuContainer = document.querySelector(".menu-container");
+
+window.addEventListener("DOMContentLoaded", function () {
+  let displayMenu = menu.map(function (item) {
+    return `<article class="menu-item">
+    <img src=${item.img} class="menu-photo" alt=${item.title} />
+    <div class="menu-info">
+      <header>
+        <h4>${item.title}</h4>
+        <h4 class="menu-price">$${item.price}</h4>
+      </header>
+      <p class="menu-desc">
+        ${item.desc}
+      </p>
+    </div>
+  </article>`;
+  });
+  displayMenu = displayMenu.join(""); // 불필요한 공백 제거
+  menuContainer.innerHTML = displayMenu;
+});
