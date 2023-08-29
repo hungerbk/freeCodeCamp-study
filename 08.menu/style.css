@@ -84,13 +84,24 @@ main {
   outline-offset: 4px;
 }
 
+.menu-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 .menu-item {
+  width: 45%;
   display: flex;
   flex-flow: row nowrap;
-  gap: 20px;
+  gap: 30px;
+  margin: 20px;
 }
 
 .menu-photo {
+  width: 230px;
+  height: 150px;
+  object-fit: cover;
   border: 3px solid darkgoldenrod;
   border-radius: 10px;
 }
