@@ -88,7 +88,7 @@
 - transform을 이용하여 show-sidebar 제어
   ```css
   .sidebar {
-   tranform: translate(-100%);
+   transform: translate(-100%);
    transition: all 0.5s ease;
    }
 
@@ -104,7 +104,7 @@
 - classList.toggle()
 
 ***
-## [06. 모달 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/05.modal)
+## [06. 모달 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/06.modal)
 ![Aug-27-2023 17-47-19](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/012cf19f-1470-42bc-88c3-272dcb9821fa)
 
 - classList.add()와 classList.remove()를 통해 모달의 display를 제어
@@ -115,3 +115,18 @@
 - addEventListener()
 - classList.add()
 - classList.remove()
+
+
+***
+## [07. FAQ 페이지 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/07.faqPage)
+![Aug-28-2023 22-36-18](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/4d4433c8-5c86-4205-a469-303acb3b9e89)
+
+- 하나의 함수로 여러 버튼에 이벤트 적용하기
+- 클릭한 질문 외의 다른 질문은 세부 내용 가리기
+
+## 주요개념
+- document.querySelectorAll()
+- addEventListener()
+- forEach()
+- classList.remove()
+- classList.toggle()
