@@ -64,7 +64,7 @@ const menu = [
   },
   {
     id: 8,
-    title: "america classic",
+    title: "american classic",
     category: "lunch",
     price: 12.99,
     img: "../03.reviewCarousel/profile1.jpeg",
