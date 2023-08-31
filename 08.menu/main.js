@@ -75,7 +75,11 @@ const menu = [
 const menuContainer = document.querySelector(".menu-container");
 
 window.addEventListener("DOMContentLoaded", function () {
-  let displayMenu = menu.map(function (item) {
+  displayMenuItems(menu);
+});
+
+function displayMenuItems(menuItem) {
+  let displayMenu = menuItem.map(function (item) {
     return `<article class="menu-item">
     <img src=${item.img} class="menu-photo" alt=${item.title} />
     <div class="menu-info">
@@ -91,4 +95,4 @@ window.addEventListener("DOMContentLoaded", function () {
   });
   displayMenu = displayMenu.join(""); // 불필요한 공백 제거
   menuContainer.innerHTML = displayMenu;
-});
+}
