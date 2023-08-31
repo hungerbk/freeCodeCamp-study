@@ -73,9 +73,24 @@ const menu = [
 ];
 
 const menuContainer = document.querySelector(".menu-container");
+const filterBtns = document.querySelectorAll(".filter-button");
 
+// load items
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
+});
+
+// filter items
+filterBtns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const category = e.currentTarget.dataset.id;
+    if (category === "all") {
+      displayMenuItems(menu);
+    } else {
+      const filteredMenu = menu.filter((menuItem) => menuItem.category === category);
+      displayMenuItems(filteredMenu);
+    }
+  });
 });
 
 function displayMenuItems(menuItem) {
