@@ -90,7 +90,7 @@ const menu = [
 
 const menuContainer = document.querySelector(".menu-container");
 const filterList = document.querySelector(".filter-list");
-const filterBtns = document.querySelectorAll(".filter-button");
+// const filterBtns = document.querySelectorAll(".filter-button"); // 버튼을 동적으로 생성하면, js가 실행됐을 때 이 버튼을 찾을 수 없음(정의된 이후에 생성되기 때문) => DOMContentLoaded 이벤트 안으로 이동
 
 // load items
 window.addEventListener("DOMContentLoaded", function () {
@@ -110,18 +110,18 @@ window.addEventListener("DOMContentLoaded", function () {
     .join("");
 
   filterList.innerHTML = categoryBtns;
-});
-
-// filter items
-filterBtns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    const category = e.currentTarget.dataset.id;
-    if (category === "all") {
-      displayMenuItems(menu);
-    } else {
-      const filteredMenu = menu.filter((menuItem) => menuItem.category === category);
-      displayMenuItems(filteredMenu);
-    }
+  const filterBtns = filterList.querySelectorAll(".filter-button");
+  // filter items
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      const category = e.currentTarget.dataset.id;
+      if (category === "all") {
+        displayMenuItems(menu);
+      } else {
+        const filteredMenu = menu.filter((menuItem) => menuItem.category === category);
+        displayMenuItems(filteredMenu);
+      }
+    });
   });
 });
 
