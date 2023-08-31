@@ -70,14 +70,46 @@ const menu = [
     img: "../03.reviewCarousel/profile1.jpeg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis iusto voluptas voluptates culpa odio tenetur enim ipsa quidem modi quasi, dicta at nemo expedita laboriosam hic.",
   },
+  {
+    id: 9,
+    title: "quarantine buddy",
+    category: "shakes",
+    price: 16.99,
+    img: "../03.reviewCarousel/profile1.jpeg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis iusto voluptas voluptates culpa odio tenetur enim ipsa quidem modi quasi, dicta at nemo expedita laboriosam hic.",
+  },
+  {
+    id: 8,
+    title: "steak dinner",
+    category: "dinner",
+    price: 39.99,
+    img: "../03.reviewCarousel/profile1.jpeg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis iusto voluptas voluptates culpa odio tenetur enim ipsa quidem modi quasi, dicta at nemo expedita laboriosam hic.",
+  },
 ];
 
 const menuContainer = document.querySelector(".menu-container");
+const filterList = document.querySelector(".filter-list");
 const filterBtns = document.querySelectorAll(".filter-button");
 
 // load items
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
+
+  const categories = menu.reduce(
+    (acc, cur) => {
+      !acc.includes(cur.category) ? acc.push(cur.category) : acc;
+      return acc;
+    },
+    ["all"]
+  );
+  const categoryBtns = categories
+    .map(function (category) {
+      return `<li class="filter-item"><button class="filter-button" type="button" data-id=${category}>${category}</button></li>`;
+    })
+    .join("");
+
+  filterList.innerHTML = categoryBtns;
 });
 
 // filter items
