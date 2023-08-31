@@ -95,7 +95,29 @@ const filterList = document.querySelector(".filter-list");
 // load items
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
+  dispalyMenuButtons();
+});
 
+function displayMenuItems(menuItem) {
+  let displayMenu = menuItem.map(function (item) {
+    return `<article class="menu-item">
+    <img src=${item.img} class="menu-photo" alt=${item.title} />
+    <div class="menu-info">
+      <header>
+        <h4>${item.title}</h4>
+        <h4 class="menu-price">$${item.price}</h4>
+      </header>
+      <p class="menu-desc">
+        ${item.desc}
+      </p>
+    </div>
+  </article>`;
+  });
+  displayMenu = displayMenu.join(""); // 불필요한 공백 제거
+  menuContainer.innerHTML = displayMenu;
+}
+
+function dispalyMenuButtons() {
   const categories = menu.reduce(
     (acc, cur) => {
       !acc.includes(cur.category) ? acc.push(cur.category) : acc;
@@ -123,23 +145,4 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-});
-
-function displayMenuItems(menuItem) {
-  let displayMenu = menuItem.map(function (item) {
-    return `<article class="menu-item">
-    <img src=${item.img} class="menu-photo" alt=${item.title} />
-    <div class="menu-info">
-      <header>
-        <h4>${item.title}</h4>
-        <h4 class="menu-price">$${item.price}</h4>
-      </header>
-      <p class="menu-desc">
-        ${item.desc}
-      </p>
-    </div>
-  </article>`;
-  });
-  displayMenu = displayMenu.join(""); // 불필요한 공백 제거
-  menuContainer.innerHTML = displayMenu;
 }
