@@ -101,10 +101,10 @@ window.addEventListener("DOMContentLoaded", function () {
 function displayMenuItems(menuItem) {
   let displayMenu = menuItem.map(function (item) {
     return `<article class="menu-item">
-    <img src=${item.img} class="menu-photo" alt=${item.title} />
+    <img src=${item.img} class="menu-photo" alt="${item.title} image" />
     <div class="menu-info">
       <header>
-        <h4>${item.title}</h4>
+        <h4>${firstToUpperCase(item.title)}</h4>
         <h4 class="menu-price">$${item.price}</h4>
       </header>
       <p class="menu-desc">
@@ -125,9 +125,10 @@ function dispalyMenuButtons() {
     },
     ["all"]
   );
+
   const categoryBtns = categories
     .map(function (category) {
-      return `<li class="filter-item"><button class="filter-button" type="button" data-id=${category}>${category}</button></li>`;
+      return `<li class="filter-item"><button class="filter-button" type="button" data-id=${category}>${firstToUpperCase(category)}</button></li>`;
     })
     .join("");
 
@@ -145,4 +146,13 @@ function dispalyMenuButtons() {
       }
     });
   });
+}
+
+function firstToUpperCase(str) {
+  const splitedStr = str.split(" ");
+  if (splitedStr.length === 1) {
+    return str[0].toUpperCase() + str.slice(1, str.length);
+  } else {
+    return splitedStr.map((item) => item[0].toUpperCase() + item.slice(1, item.length)).join(" ");
+  }
 }
