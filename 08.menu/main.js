@@ -11,7 +11,7 @@ const menu = [
     title: "buttermlik pancakes",
     category: "breakfast",
     price: 15.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/01.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione eos nemo ipsa adipisci porro, aperiam blanditiis sint repellendus tenetur est eligendi autem sit pariatur praesentium sunt iste nostrum ex?",
   },
   {
@@ -19,7 +19,7 @@ const menu = [
     title: "diner double",
     category: "lunch",
     price: 13.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/02.jpg",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta a ad nobis vitae ipsa deleniti veritatis accusamus magni minus quae.",
   },
   {
@@ -27,7 +27,7 @@ const menu = [
     title: "godzilla milkshake",
     category: "shakes",
     price: 6.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/03.jpg",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eaque esse facilis vero fuga nostrum dolores velit, libero pariatur, sed voluptates animi, totam a architecto.",
   },
   {
@@ -35,7 +35,7 @@ const menu = [
     title: "country delight",
     category: "breakfast",
     price: 20.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/04.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minus? Cumque vitae voluptate saepe fugit numquam amet iste in soluta doloremque quam hic quia, tenetur corrupti dolorem quae. Nihil, distinctio.",
   },
   {
@@ -43,7 +43,7 @@ const menu = [
     title: "egg attack",
     category: "lunch",
     price: 15.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/05.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat recusandae quisquam voluptates ut in cum dignissimos obcaecati doloremque fuga. Perferendis et placeat adipisci nihil, cumque, labore cupiditate ipsum sit repudiandae fugiat sequi perspiciatis incidunt veniam veritatis tempore eius sint reprehenderit.",
   },
   {
@@ -51,7 +51,7 @@ const menu = [
     title: "oreo dream",
     category: "shakes",
     price: 18.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/06.jpg",
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam in quidem, saepe possimus cupiditate facilis nobis ea magnam! Saepe, vel est. Eaque provident suscipit voluptatibus, molestiae eum sapiente aliquid at magnam itaque nihil.",
   },
   {
@@ -59,7 +59,7 @@ const menu = [
     title: "bacon overflow",
     category: "breakfast",
     price: 8.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/07.jpg",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione rem similique laborum laudantium! Ut hic alias dolorum nostrum quisquam?",
   },
   {
@@ -67,7 +67,7 @@ const menu = [
     title: "american classic",
     category: "lunch",
     price: 12.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/08.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis iusto voluptas voluptates culpa odio tenetur enim ipsa quidem modi quasi, dicta at nemo expedita laboriosam hic.",
   },
   {
@@ -75,15 +75,15 @@ const menu = [
     title: "quarantine buddy",
     category: "shakes",
     price: 16.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/09.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis iusto voluptas voluptates culpa odio tenetur enim ipsa quidem modi quasi, dicta at nemo expedita laboriosam hic.",
   },
   {
-    id: 8,
+    id: 10,
     title: "steak dinner",
     category: "dinner",
     price: 39.99,
-    img: "../03.reviewCarousel/profile1.jpeg",
+    img: "./images/10.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis iusto voluptas voluptates culpa odio tenetur enim ipsa quidem modi quasi, dicta at nemo expedita laboriosam hic.",
   },
 ];
