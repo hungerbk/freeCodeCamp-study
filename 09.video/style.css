@@ -35,3 +35,7 @@ a {
 button {
   cursor: pointer;
 }
+
+.video-container {
+  z-index: -2;
+}
