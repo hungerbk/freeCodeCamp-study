@@ -132,7 +132,7 @@
 - classList.toggle()
 
 ***
-## [08. 식당 메뉴판 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/07.menu)
+## [08. 식당 메뉴판 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/08.menu)
 ![Sep-02-2023 12-25-54](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/f45c8052-45e2-4040-b28d-bb92cf5ee7db)
 
 - 버튼에 따라 필터된 항목을 화면을 보여줌
@@ -151,3 +151,20 @@
 - 클릭할 때마다 가운데 정렬해둔 부분이 움직임...
 
   ![Sep-01-2023 22-36-50](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/3ab6e059-adb9-4f56-bb4d-d5993993da9c)
+
+***
+## [09. 비디오 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/09.video)
+![Sep-11-2023 22-12-16](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/0e17aa53-756a-443f-b5a1-49d4f2a3f781)
+
+
+- pause()와 play()를 이용하여 비디오를 컨트롤할 수 있게 구현
+- preloader 학습 (노션)
+
+### 주요 개념
+- document.querySelector()
+- addEventListener()
+- classList.contains()
+- classList.add()
+- classList.remove()
+- play()
+- pause()
