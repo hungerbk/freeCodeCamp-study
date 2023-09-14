@@ -35,3 +35,151 @@ a {
 button {
   cursor: pointer;
 }
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+}
+
+header {
+  background-image: url(../06.modal/see.jpg);
+  object-fit: contain;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  color: #fff;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 50px;
+  height: 50px;
+  filter: invert(88%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(104%) contrast(104%);
+}
+
+.banner .container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.banner p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.banner .container .btn {
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  letter-spacing: 2px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+section span {
+  color: #2dffb9;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+  color: #fff;
+  position: relative;
+}
+
+footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+}
+
+/* 모바일 */
+@media screen and (max-width: 859px) {
+  .nav-button {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .first-burger-bar,
+  .second-burger-bar,
+  .last-burger-bar {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: #2dffb9;
+    border-radius: 0.25rem;
+    left: 0;
+  }
+
+  .first-burger-bar {
+    top: 0;
+  }
+
+  .second-burger-bar {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .last-burger-bar {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 860px) {
+  .nav-button {
+    display: none;
+  }
+
+  .links-container {
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .link-item a {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 5px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+  }
+}
