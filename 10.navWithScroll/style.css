@@ -36,11 +36,6 @@ button {
   cursor: pointer;
 }
 
-.links-container {
-  height: 0;
-  overflow: hidden;
-}
-
 header {
   background-image: url(../06.modal/see.jpg);
   object-fit: contain;
@@ -59,6 +54,11 @@ header {
   height: 50px;
   filter: invert(88%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(104%) contrast(104%);
 }
+
+/* .links-container {
+  height: 0;
+  overflow: hidden;
+} */
 
 .banner .container {
   display: flex;
@@ -123,11 +123,28 @@ footer p {
 
 /* 모바일 */
 @media screen and (max-width: 859px) {
-  /* .nav {
+  .links-container {
+    height: auto;
+    display: flex;
+    margin-top: 40px;
+    flex-flow: column nowrap;
     background-color: #fff;
-    height: 200px;
     z-index: 10;
-  } */
+  }
+
+  .link-item a {
+    font-size: 25px;
+    color: black;
+    letter-spacing: 2px;
+    display: block;
+    padding: 10px;
+  }
+
+  .link-item a:hover,
+  .link-item a:focus {
+    background-color: #2dffb9;
+    color: #fff;
+  }
 
   .logo {
     filter: invert(72%) sepia(37%) saturate(773%) hue-rotate(104deg) brightness(107%) contrast(101%);
