@@ -41,9 +41,12 @@ header {
   object-fit: contain;
   width: 100%;
   height: 100vh;
-  padding: 20px;
   position: relative;
   color: #fff;
+}
+
+#nav {
+  padding-top: 20px;
 }
 
 .logo {
@@ -55,10 +58,10 @@ header {
   filter: invert(88%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(104%) contrast(104%);
 }
 
-/* .links-container {
+.links-container {
   height: 0;
   overflow: hidden;
-} */
+}
 
 .banner .container {
   display: flex;
@@ -75,6 +78,7 @@ header {
   font-size: 80px;
   font-weight: bolder;
   letter-spacing: 3px;
+  text-align: center;
 }
 
 .banner p {
@@ -123,13 +127,16 @@ footer p {
 
 /* 모바일 */
 @media screen and (max-width: 859px) {
+  #nav {
+    background-color: #fff;
+  }
+
   .links-container {
     height: auto;
     display: flex;
     margin-top: 40px;
     flex-flow: column nowrap;
     background-color: #fff;
-    z-index: 10;
   }
 
   .link-item a {
@@ -137,7 +144,7 @@ footer p {
     color: black;
     letter-spacing: 2px;
     display: block;
-    padding: 10px;
+    padding: 20px;
   }
 
   .link-item a:hover,
@@ -188,6 +195,10 @@ footer p {
 
 /* 데스크탑 */
 @media screen and (min-width: 860px) {
+  #nav {
+    padding-right: 20px;
+  }
+
   .nav-button {
     display: none;
   }
