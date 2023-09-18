@@ -105,6 +105,10 @@ section {
   align-items: center;
 }
 
+section:nth-child(odd) {
+  background-color: rgb(255, 255, 238);
+}
+
 section span {
   color: #2dffb9;
 }
@@ -123,6 +127,8 @@ footer p {
   left: 50%;
   transform: translate(-50%, -50%);
   letter-spacing: 2px;
+  font-size: smaller;
+  text-align: center;
 }
 
 /* 모바일 */
