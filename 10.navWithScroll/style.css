@@ -133,14 +133,10 @@ footer p {
 
 /* 모바일 */
 @media screen and (max-width: 859px) {
-  #nav {
-    background-color: #fff;
-  }
-
-  .links-container {
+  .show-links {
     height: auto;
     display: flex;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     flex-flow: column nowrap;
     background-color: #fff;
   }
