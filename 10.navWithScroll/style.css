@@ -136,9 +136,12 @@ footer p {
   .show-links {
     height: auto;
     display: flex;
-    /* margin-top: 40px; */
     flex-flow: column nowrap;
     background-color: #fff;
+  }
+
+  .links-container {
+    margin-top: 40px;
   }
 
   .link-item a {
