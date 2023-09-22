@@ -6,3 +6,7 @@ navBtn.addEventListener("click", function () {
   lisnksContainer.classList.toggle("show-links");
   nav.classList.toggle("show-links");
 });
+
+// set date
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();
