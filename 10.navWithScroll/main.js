@@ -1,6 +1,5 @@
 const navBtn = document.querySelector(".nav-button");
 const lisnksContainer = document.querySelector(".links-container");
-const nav = document.getElementById("nav");
 
 navBtn.addEventListener("click", function () {
   lisnksContainer.classList.toggle("show-links");
@@ -8,5 +7,6 @@ navBtn.addEventListener("click", function () {
 });
 
 // set date
+const nav = document.getElementById("nav");
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
