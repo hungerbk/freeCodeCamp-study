@@ -147,9 +147,6 @@ footer p {
 /* 모바일 */
 @media screen and (max-width: 859px) {
   .show-links {
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
     background-color: #fff;
   }
 
@@ -158,6 +155,7 @@ footer p {
   }
 
   .link-item a {
+    background-color: #fff;
     font-size: 25px;
     color: black;
     letter-spacing: 2px;

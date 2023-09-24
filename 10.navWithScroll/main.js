@@ -5,7 +5,7 @@ const nav = document.getElementById("nav");
 
 navBtn.addEventListener("click", function () {
   // lisnksContainer.classList.toggle("show-links");
-  // nav.classList.toggle("show-links");
+  nav.classList.toggle("show-links");
   const containerHeigt = lisnksContainer.getBoundingClientRect().height;
   const linksHeight = links.getBoundingClientRect().height;
 
