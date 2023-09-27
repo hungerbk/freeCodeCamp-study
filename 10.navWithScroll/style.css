@@ -49,6 +49,15 @@ header {
   padding-top: 20px;
 }
 
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px rgba(182, 182, 182, 0.5);
+}
+
 .logo {
   position: absolute;
   top: 8px;
@@ -132,7 +141,7 @@ footer p {
 }
 
 .top-link {
-  display: block;
+  /* display: block; */
   width: 30px;
   height: 30px;
   background: #2dffb9 url("./CaretDoubleUp.svg") no-repeat center 40%;
@@ -142,6 +151,14 @@ footer p {
   bottom: 20px;
   right: 20px;
   border-radius: 50%;
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
 }
 
 /* 모바일 */
