@@ -55,7 +55,8 @@ header {
   left: 0;
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 5px rgba(182, 182, 182, 0.5);
+  color: black;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -141,7 +142,6 @@ footer p {
 }
 
 .top-link {
-  /* display: block; */
   width: 30px;
   height: 30px;
   background: #2dffb9 url("./CaretDoubleUp.svg") no-repeat center 40%;
@@ -229,6 +229,10 @@ footer p {
 @media screen and (min-width: 860px) {
   #nav {
     padding-right: 20px;
+  }
+
+  .logo .fixed-nav {
+    filter: invert(0%) sepia(27%) saturate(5466%) hue-rotate(2deg) brightness(87%) contrast(101%);
   }
 
   .nav-button {

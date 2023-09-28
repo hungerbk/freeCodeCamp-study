@@ -20,3 +20,26 @@ navBtn.addEventListener("click", function () {
 // set date
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
+
+// fixed navbar
+const navbar = document.getElementById("nav");
+const topLink = document.querySelector(".top-link");
+const logo = document.querySelector(".logo");
+
+window.addEventListener("scroll", function () {
+  const scrollHeight = this.window.scrollY;
+  const navHeight = navbar.getBoundingClientRect().height;
+  if (scrollHeight > navHeight) {
+    navbar.classList.add("fixed-nav");
+    logo.classList.add("fixed-nav");
+  } else {
+    navbar.classList.remove("fixed-nav");
+    logo.classList.remove("fixed-nav");
+  }
+
+  if (scrollHeight > 500) {
+    topLink.classList.add("show-link");
+  } else {
+    topLink.classList.remove("show-link");
+  }
+});
