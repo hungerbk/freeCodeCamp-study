@@ -43,3 +43,35 @@ window.addEventListener("scroll", function () {
     topLink.classList.remove("show-link");
   }
 });
+
+// smooth scroll
+const scrollLinks = document.querySelectorAll(".scroll-link");
+
+scrollLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    const element = document.getElementById(id);
+
+    const navHeigt = navbar.getBoundingClientRect().height;
+    const containerHeigt = lisnksContainer.getBoundingClientRect().height;
+    const fixedNav = navbar.classList.contains("fixed-nav");
+    let position = element.offsetTop - navHeigt;
+
+    if (!fixedNav) {
+      position = position - navHeigt;
+    }
+    // 모바일일 때 링크 리스트가 열려있는 경우 > 이동했을 때 상단 여백이 많기 때문에 필요한 부분
+    if (navHeigt > 82) {
+      position = position + containerHeigt;
+    }
+
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+    // 모바일에서 링크를 누른 경우 링크 리스트가 닫히게
+    lisnksContainer.style.height = 0;
+  });
+});
