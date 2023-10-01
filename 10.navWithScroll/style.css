@@ -71,7 +71,7 @@ header {
   left: 20px;
   width: 50px;
   height: 50px;
-  filter: invert(88%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(104%) contrast(104%);
+  filter: invert(72%) sepia(37%) saturate(773%) hue-rotate(104deg) brightness(107%) contrast(101%);
 }
 
 .links-container {
@@ -191,10 +191,6 @@ footer p {
     color: #fff;
   }
 
-  .logo {
-    filter: invert(72%) sepia(37%) saturate(773%) hue-rotate(104deg) brightness(107%) contrast(101%);
-  }
-
   .nav-button {
     width: 35px;
     height: 35px;
@@ -235,10 +231,6 @@ footer p {
 @media screen and (min-width: 860px) {
   #nav {
     padding-right: 20px;
-  }
-
-  .logo .fixed-nav {
-    filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(35deg) brightness(104%) contrast(107%);
   }
 
   .nav-button {
