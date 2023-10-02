@@ -157,7 +157,7 @@ footer p {
   bottom: 20px;
   right: 20px;
   border-radius: 50%;
-  animation: bounce 2s ease-in-out infinite;
+  animation: bounce 1s ease-in-out infinite;
   visibility: hidden;
   z-index: -100;
 }
@@ -165,6 +165,18 @@ footer p {
 .show-link {
   visibility: visible;
   z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* 모바일 */
