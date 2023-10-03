@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Scroll Navbar</title>
+  </head>
+  <body>
+    <header id="home">
+      <nav id="nav">
+        <img class="logo" src="./SteeringWheel.svg" alt="backroads travel tours company logo" />
+        <button class="nav-button" type="button">
+          <span class="first-burger-bar"></span>
+          <span class="second-burger-bar"></span>
+          <span class="last-burger-bar"></span>
+        </button>
+        <div class="links-container">
+          <ul class="links">
+            <li class="link-item"><a href="#home" class="scroll-link">Home</a></li>
+            <li class="link-item"><a href="#about" class="scroll-link">About</a></li>
+            <li class="link-item"><a href="#services" class="scroll-link">Services</a></li>
+            <li class="link-item"><a href="#tours" class="scroll-link">Tours</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner start -->
+      <div class="banner">
+        <div class="container">
+          <h1>SCROLL PROJECT</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odio eos asperiores voluptatem iste natus ratione iure quidem doloribus nulla.</p>
+          <a href="#tours" class="scroll-link btn">EXPLORE TOURS</a>
+        </div>
+      </div>
+      <!-- banner end -->
+    </header>
+    <main>
+      <section id="about" class="section">
+        <h2>ABOUT <span>US</span></h2>
+      </section>
+      <section id="services" class="section">
+        <h2>OUR <span>SERVICES</span></h2>
+      </section>
+      <section id="tours" class="section">
+        <h2>FEATURED <span>TOURS</span></h2>
+      </section>
+    </main>
+    <footer class="section">
+      <p>copyright &copy; Backroads Travel Tours Company <span id="date"></span>. All Rights Reserved</p>
+    </footer>
+    <a href="#home" class="scroll-link top-link"></a>
+  </body>
+</html>
