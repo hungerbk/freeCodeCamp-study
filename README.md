@@ -168,3 +168,30 @@
 - classList.remove()
 - play()
 - pause()
+  
+***
+## [10. 스크롤바를 따라 움직이는 내비게이션 바 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/10.navWithScroll)
+![Oct-03-2023 21-41-45](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/f0f1d2f8-0108-4fcc-9915-5c7cd6c12ad6)
+
+데스크탑 ver.
+
+![Oct-03-2023 21-45-26](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/5fcae1a3-342e-4a4c-983e-cd1fca637a3d)
+
+모바일 ver.
+
+- getFullYear()를 사용하여 연도를 동적으로 생성
+- getBoundingClientRect()를 사용하여 목록 리스트의 높이를 동적으로 생성
+- slice 메서드를 사용하여 원하는 문자열 부분만 잘라내기
+- window.scrollTo()를 사용하여 원하는 위치로 이동 (기본 기능을 사용하면 h2가 내비게이션 바에 가려져서 보이지 않음)
+- scroll-behavior: smooth; 를 사용하여 스크롤 이벤트를 부드럽게
+
+### 주요 개념
+- document.getElementById()
+- getFullYear()
+- getBoundingClientRect()
+- slice 메서드
+- window.scrollTo()
+
+### 해결해야 하는 문제
+- 모바일에서 h1이 nav list 보다 위에 보임(저 부분은 list 선택도 되지 않음). z-index로 해결되지 않음 
+   <img width="738" alt="스크린샷 2023-10-03 오후 9 47 24" src="https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/2bec3230-a514-4234-9f77-b743c7f44500">
