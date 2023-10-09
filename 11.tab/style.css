@@ -38,7 +38,8 @@ button {
 
 main {
   background-color: rgb(206, 227, 234);
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 section {
