@@ -75,7 +75,8 @@ h1 {
 
 .about {
   width: 500px;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   border-radius: 10px;
   background-color: white;
 }
@@ -100,6 +101,11 @@ h1 {
 
 .tab-btn:last-child {
   border-radius: 0 10px 0 0;
+}
+
+.tab-btn:hover,
+.tab-btn:focus {
+  background-color: rgb(194, 250, 232);
 }
 
 .tab-btn.active {
@@ -127,4 +133,8 @@ h1 {
 .content p {
   margin-top: 20px;
   line-height: 20px;
+}
+
+.content ul {
+  margin-top: 20px;
 }
