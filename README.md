@@ -195,3 +195,30 @@
 ### 해결해야 하는 문제
 - 모바일에서 h1이 nav list 보다 위에 보임(저 부분은 list 선택도 되지 않음). z-index로 해결되지 않음 
    <img width="738" alt="스크린샷 2023-10-03 오후 9 47 24" src="https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/2bec3230-a514-4234-9f77-b743c7f44500">
+
+***
+## [11. 서로 다른 내용을 보여주는 탭 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/11.tab)
+![Oct-10-2023 23-36-36](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/e803e441-c464-42fa-ac42-cad409d7283e)
+
+데스크탑 ver.
+
+<img width="624" alt="스크린샷 2023-10-10 오후 11 41 34" src="https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/5002dc62-588e-42da-82ed-83e57a002ffc">
+
+모바일 ver.
+
+- 이벤트 버블링을 이용하여 개별 버튼이 아닌 ```<article class= 'about' >``` 에 이벤트 리스너를 연결함
+- data-id와 dataset을 이용하여 버튼과 내용이 보여지는 영역을 연결
+
+### 주요개념
+
+- classList.add()
+- classList.remove()
+- forEach()
+- addEventListener()
+
+### 해결해야 하는 문제
+- 내용에 따라 영역의 크기를 변경하기 위해 min-height와 height를 지정했는데, min-height:300px이 적용되지 않음. 처음에 height:300px 했을 땐 적용이 되었음.
+
+   <img width="534" alt="스크린샷 2023-10-10 오후 11 44 45" src="https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/e8e97b56-724a-48ef-8c35-817e8c67a46e">
+   <img width="262" alt="스크린샷 2023-10-10 오후 11 45 04" src="https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/e0525769-45ca-405d-8720-5949a6832f9f">
+
