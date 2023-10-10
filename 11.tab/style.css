@@ -1,0 +1,140 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+section,
+aside,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  background-color: rgb(206, 227, 234);
+  min-height: 100vh;
+  height: auto;
+}
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 40px;
+}
+
+section p {
+  color: rgb(97, 106, 113);
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+.about-img img {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.about-center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.about {
+  width: 500px;
+  min-height: 300px;
+  height: auto;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.btn-container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0;
+}
+
+.tab-btn {
+  flex-grow: 1;
+  border: none;
+  background-color: rgb(151, 171, 176);
+  padding: 10px 20px;
+  letter-spacing: 2px;
+}
+
+.tab-btn:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.tab-btn:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.tab-btn:hover,
+.tab-btn:focus {
+  background-color: rgb(194, 250, 232);
+}
+
+.tab-btn.active {
+  background-color: white;
+}
+
+.about-content {
+  padding: 20px 15px;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.content p {
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+.content ul {
+  margin-top: 20px;
+}
