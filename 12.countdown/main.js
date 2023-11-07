@@ -18,6 +18,4 @@ month = months[month];
 const date = futureDate.getDate();
 const weekday = weekdays[futureDate.getDay()];
 
-giveaway.textContent = `Giveaway Ends on ${weekday}, ${date} ${month} ${year} ${hours}: ${minutes} am`;
-
-console.log(months[month]);
+giveaway.textContent = `Giveaway Ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes} am`;
