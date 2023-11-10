@@ -222,3 +222,20 @@
    <img width="534" alt="스크린샷 2023-10-10 오후 11 44 45" src="https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/e8e97b56-724a-48ef-8c35-817e8c67a46e">
    <img width="262" alt="스크린샷 2023-10-10 오후 11 45 04" src="https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/e0525769-45ca-405d-8720-5949a6832f9f">
 
+***
+## [12. 카운트다운 시계 만들기](https://github.com/hungerbk/freeCodeCamp-study/tree/main/12.countdown)
+![Nov-11-2023 02-01-51](https://github.com/hungerbk/freeCodeCamp-study/assets/43366461/647cb8e4-0450-45fb-b0aa-722b20db6195)
+
+
+- Date() 관련 함수를 이용하여 target date를 동적으로 생성
+- setInterval()을 이용하여 1초마다 화면이 바뀌도록(시간이 줄어들도록) 구현
+- 남은 시간이 0이 되는 경우, 카운트다운 대신 시간이 완료되었다는 문구 보여줌
+
+### 주요 개념
+- getFullYear()
+- getMonth()
+- getDate()
+- Math.floor()
+- setInterval()
+- clearInterval()
+
