@@ -68,3 +68,12 @@ body {
   border-radius: 5px;
   background-color: DodgerBlue;
 }
+
+.lorem-text .result {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 24px;
+  color: CadetBlue;
+}
