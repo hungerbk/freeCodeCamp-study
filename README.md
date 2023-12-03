@@ -239,3 +239,23 @@
 - setInterval()
 - clearInterval()
 
+
+***
+## [13. 나만의 Lorem ipsum 만들기](https://github.com/freeCodeCamp-study/bokyeong/tree/main/13.myLoremIpsum)
+![Nov-25-2023 23-50-11](https://github.com/freeCodeCamp-study/bokyeong/assets/43366461/45783ccd-701e-4ec9-bf27-6d7df73f965d)
+
+- 입력한 숫자에 맞는 수의 문단을 보여줌
+- 아무 숫자도 입력하지 않았거나 0 미만 9 초과를 입력한 경우 랜덤으로 한 문단을 보여줌
+
+### 주요 개념
+- parseInt()
+- Math.floor()
+- Math.random()
+- isNaN()
+- slice 메서드
+- event.preventDefault()
+
+### 생각해 볼 문제
+- 현재 입력 값을 받아오는 코드는 ```const value = parseInt(amount.value);``` 인데, 처음에 ```const value = Number(amount.value);```로 입력하니 입력 값이 없는 경우 화면에 아무 문단도 보이지 않았다. undefined를 숫자로로 바꿀 수없어서 그런 거였나..? 그럼 undefined를 parseInt()하는 것은 괜찮은건가? 둘이 크게 다르지 않은 함수라고 생각했는데 그건 아니었던 것 같다.
+
+
