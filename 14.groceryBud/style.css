@@ -10,6 +10,7 @@ h5,
 h6,
 p,
 ul,
+ol,
 li,
 section,
 aside,
@@ -24,7 +25,8 @@ header {
   line-height: 1;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
@@ -34,4 +36,92 @@ a {
 
 button {
   cursor: pointer;
+}
+
+body {
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: LightBlue;
+}
+
+section {
+  width: 500px;
+  min-height: 100px;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+section > h1 {
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: bold;
+  color: CadetBlue;
+}
+
+section form {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+section input {
+  flex-grow: 1;
+}
+
+section input:hover,
+section input:focus {
+  background-color: rgb(234, 249, 255);
+}
+
+.submit-button {
+  padding: 5px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  background-color: CornflowerBlue;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  color: white;
+}
+
+.grocery-list {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.grocery-item {
+  margin: 5px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-button {
+  width: 100%;
+  padding: 5px;
+  color: brown;
+  letter-spacing: 3px;
+  border: none;
+  background-color: transparent;
+}
+
+.clear-button:hover,
+.clear-button:focus {
+  color: white;
+  background-color: brown;
 }
